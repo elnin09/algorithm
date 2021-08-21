@@ -27,7 +27,9 @@ int find(char *data , wordMap array[],int size)
 int main()
 {
   
-  char fileName[500] = "sample-long.txt";
+  char fileName[500];
+  cout<<"Enter your file name"<<endl;
+  cin>>fileName;
   char fileData[500000];
   FILE *fp = fopen(fileName,"r");
   if(fp == NULL)return -1;
@@ -72,7 +74,7 @@ int main()
     } 
   }
 
-  cout<<"Top 15 words on the basis of frequency"<<endl<<endl;
+  cout<<endl<<"Top 15 words on the basis of frequency"<<endl<<endl;
   for(int i=0;i<15&&i<currentIndex;i++)
   {
      cout<<wordcontainer[i].word<<endl<<wordcontainer[i].count<<endl<<endl;
