@@ -61,6 +61,7 @@ int main()
     }
   }
 
+  //sorting on the basis of count/frequency of the word
   for(int i=0;i<currentIndex;i++)
   {
     for(int j=i+1;j<currentIndex;j++)
